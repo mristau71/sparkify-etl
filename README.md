@@ -10,15 +10,15 @@ TBD.
 ```javascript
 {
   "num_songs": 1,
-  "artist_id": "ARJIE2Y1187B994AB7",
-  "artist_latitude": null,
-  "artist_longitude": null,
-  "artist_location": "",
-  "artist_name": "Line Renaud",
-  "song_id": "SOUPIRU12A6D4FA1E1",
-  "title": "Der Kleine Dompfaff",
-  "duration": 152.92036,
-  "year": 0
+  "artist_id": "ARMJAGH1187FB546F3",
+  "artist_latitude": 35.14968,
+  "artist_longitude": -90.04892,
+  "artist_location": "Memphis, TN",
+  "artist_name": "The Box Tops",
+  "song_id": "SOCIWDW12A8C13D406",
+  "title": "Soul Deep",
+  "duration": 148.03546,
+  "year": 1969
 }
 ```
 
