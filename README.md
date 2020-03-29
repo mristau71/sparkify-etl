@@ -25,16 +25,25 @@ TBD.
 ### Log data
 ```javascript
 {
-  "num_songs": 1,
-  "artist_id": "ARJIE2Y1187B994AB7",
-  "artist_latitude": null,
-  "artist_longitude": null,
-  "artist_location": "",
-  "artist_name": "Line Renaud",
-  "song_id": "SOUPIRU12A6D4FA1E1",
-  "title": "Der Kleine Dompfaff",
-  "duration": 152.92036,
-  "year": 0
+  "index": 2,
+  "artist": "Des'ree",
+  "auth": "Logged In",
+  "firstName": "Kaylee",
+  "gender": "F",
+  "itemInSession": 1,
+  "lastName": "Summers",
+  "length": 246.30812,
+  "level": "free",
+  "location": "Phoenix-Mesa-Scottsdale, AZ",
+  "method": "PUT",
+  "page": "NextSong",
+  "registration": 1540344794796,
+  "sessionId": 139,
+  "song": "You Gotta Be",
+  "status": 200,
+  "ts": 1541106106796,
+  "userAgent": "\"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36\"",
+  "userId": 8
 }
 ```
 
