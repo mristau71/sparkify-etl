@@ -1,6 +1,43 @@
 # sparkify-etl
 An ETL pipeline to analyze song and user activity data collected by Sparkify
 
+## Description
+TBD.
+
+## Source data
+
+### Song data
+```javascript
+{
+  "num_songs": 1,
+  "artist_id": "ARJIE2Y1187B994AB7",
+  "artist_latitude": null,
+  "artist_longitude": null,
+  "artist_location": "",
+  "artist_name": "Line Renaud",
+  "song_id": "SOUPIRU12A6D4FA1E1",
+  "title": "Der Kleine Dompfaff",
+  "duration": 152.92036,
+  "year": 0
+}
+```
+
+### Log data
+```javascript
+{
+  "num_songs": 1,
+  "artist_id": "ARJIE2Y1187B994AB7",
+  "artist_latitude": null,
+  "artist_longitude": null,
+  "artist_location": "",
+  "artist_name": "Line Renaud",
+  "song_id": "SOUPIRU12A6D4FA1E1",
+  "title": "Der Kleine Dompfaff",
+  "duration": 152.92036,
+  "year": 0
+}
+```
+
 ## Local setup
 You can work with this project locally by having an environment with the following (or equivalent):
 
