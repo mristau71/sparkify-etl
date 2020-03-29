@@ -4,7 +4,7 @@ songplay_table_drop = "DROP TABLE IF EXISTS songplays;"
 user_table_drop = "DROP TABLE IF EXISTS users;"
 song_table_drop = "DROP TABLE IF EXISTS songs;"
 artist_table_drop = "DROP TABLE IF EXISTS artists;"
-time_table_drop = "DROP TABLE IF EXISTS times;"
+time_table_drop = "DROP TABLE IF EXISTS time;"
 
 # CREATE TABLES
 
@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS artists (
 """)
 
 time_table_create = ("""
-CREATE TABLE IF NOT EXISTS times (
+CREATE TABLE IF NOT EXISTS time (
   start_time timestamp,
   hour int,
   day int,
