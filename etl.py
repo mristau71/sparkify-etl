@@ -12,7 +12,7 @@ def process_song_file(cur, filepath):
     # insert song record
     song_data = df[['song_id', 'title', 'year', 'duration']].values[0].tolist()
     cur.execute(song_table_insert, song_data)
-    
+
     # insert artist record
     artist_data = df[['artist_id', 'artist_name', 'artist_location', 'artist_latitude', 'artist_longitude']].values[0].tolist()
     cur.execute(artist_table_insert, artist_data)
@@ -27,7 +27,7 @@ def process_log_file(cur, filepath):
 
     # convert timestamp column to datetime
     t = pd.to_datetime(df['ts'], unit='ms')
-    
+
     # insert time data records
     time_data = (
         t,
@@ -73,6 +73,7 @@ def process_log_file(cur, filepath):
 
         # insert songplay record
         songplay_data = (
+            row.registration,
             pd.to_datetime(row.ts, unit='ms'),
             row.userId,
             row.level,
