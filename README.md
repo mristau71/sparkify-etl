@@ -1,12 +1,8 @@
 # sparkify-etl
-An ETL pipeline to analyze song and user activity data collected by Sparkify
-
-## Description
-TBD.
-
-## Source data
+The purpose of this ETL pipeline is to extract data from the raw song and log data files collected by the fictional Sparkify startup and load them into a database schema designed to optimize queries on song-play analysis.
 
 ### Song data
+This shows an example of one entry from a song data file:
 ```javascript
 {
   "num_songs": 1,
@@ -23,6 +19,7 @@ TBD.
 ```
 
 ### Log data
+This shows an example of one entry from a log data file:
 ```javascript
 {
   "index": 2,
@@ -57,3 +54,17 @@ You can work with this project locally by having an environment with the followi
 - PostgreSQL 9.5.4. [Installation](https://www.codementor.io/@engineerapart/getting-started-with-postgresql-on-mac-osx-are8jcopb).
 
 **The above could not be tested, as there were problems installing the psycopg2 library with pip3. I will be using Udacity's project workspace to develop the project and use this git project solely to track the development.**
+
+### How to Run
+
+For the initial database creation, run `python create_tables.py`.
+
+To run the ETL, run `python etl.py`.
+
+### Test and Helper Files
+
+The `test.ipynb` file is used to verify the records that have been loaded into the database.
+
+The `etl.ipynb` file is used to test implementation of specific functions that are used in the `etl.py`.
+
+The `sql_queries.py` file is a helper file that contains the queries to create/drop tables, insert records, and select a result set from the database.
