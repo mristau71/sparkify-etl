@@ -16,10 +16,10 @@ CREATE TABLE IF NOT EXISTS songplays (
   level varchar,
   song_id varchar REFERENCES songs,
   artist_id varchar REFERENCES artists,
-  session_id int,
+  session_id int NOT NULL,
   location varchar,
   user_agent varchar,
-  UNIQUE (start_time, user_id, song_id)
+  UNIQUE (start_time, session_id)
 );
 """)
 
@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS time (
 songplay_table_insert = ("""
 INSERT INTO songplays (start_time, user_id, level, song_id, artist_id, session_id, location, user_agent)
 VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
-ON CONFLICT (start_time, user_id, song_id) DO NOTHING
+ON CONFLICT (start_time, session_id) DO NOTHING
 """)
 
 user_table_insert = ("""
